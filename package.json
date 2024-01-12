@@ -1,14 +1,15 @@
 {
-  "homepage": "https://soma1612.github.io/testReactApp",
+  "homepage": "http://soma1612.github.io/deploy1",
   "name": "todoappdemo2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
-    "build": "webpack --mode production",
+    "start": "react-script start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    
+   "build": "react-scripts build",
     "lint": "eslint src/**/*.js",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -23,6 +24,7 @@
     "@mui/icons-material": "^5.15.2",
     "@mui/material": "^5.15.2",
     "date-fns": "^3.2.0",
+    "graceful-fs": "^4.2.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-notifications": "^1.7.4",
